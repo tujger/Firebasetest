@@ -98,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("CHILDCANCELLED:"+databaseError.getMessage());
             }
         });*/
-
         findViewById(R.id.bCreateToken).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
