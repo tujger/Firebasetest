@@ -37,30 +37,72 @@
             android:id="@+id/etValue" />
     </android.support.design.widget.TextInputLayout>
 
-    <Button
-        android:text="Create token"
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bCreateToken"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:columnCount="1"
+        android:alignmentMode="alignMargins"
+        android:foregroundGravity="center">
 
-    <Button
-        android:text="Create user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bCreateUser"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:text="Auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bAuth"
+            android:layout_toLeftOf="@+id/bCreateUser"
+            android:layout_toStartOf="@+id/bCreateUser" />
 
-    <Button
-        android:text="Create post"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bCreatePost"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/bCreateUser"
-        android:layout_toEndOf="@+id/bCreateUser" />
+        <Button
+            android:text="Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bLogout"
+            android:layout_toLeftOf="@+id/bCreateUser"
+            android:layout_toStartOf="@+id/bCreateUser" />
+
+        <Button
+            android:text="With token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bWithToken"
+            android:layout_above="@+id/bCreateUser"
+            android:layout_toRightOf="@+id/bAuth"
+            android:layout_toEndOf="@+id/bAuth" />
+
+        <Button
+            android:text="Create post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bCreatePost"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/bCreateUser"
+            android:layout_toEndOf="@+id/bCreateUser" />
+
+        <Button
+            android:text="Create location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bCreateLocation"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="Create user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bCreateUser"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </GridLayout>
 
 </RelativeLayout>

@@ -12,6 +12,7 @@ import java.util.Date;
 public class Message {
 
     public long timestamp;
+    public String author_id;
     public String from;
     public String to;
     public String body;
@@ -22,7 +23,8 @@ public class Message {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
-    public Message(String from, String to, String body) {
+    public Message(String authorId, String from, String to, String body) {
+        this.author_id = authorId;
         this.from  = from;
         this.to   = to;
         this.body  = body;

@@ -13,7 +13,7 @@ public class Group {
 
     public int ttl;
     public int delay;
-    public HashMap<String,String> users;
+    public HashMap<String,User> users;
 
 
     public Group() {
